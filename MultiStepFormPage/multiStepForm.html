@@ -3,73 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-step-form</title>
-    <link rel="icon" type="image/x-icon" href="favicon-32x32 (1).png">
-    <link rel="stylesheet" type="text/css" href="Multi-step form.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="select_your_plan.css">
+</head>
+
 </head>
 <body>
 
-<div class="multi_step-container">
-<div class="multi_step_form">
-   
-    <div class="multi-step-form-menu">
+<div class="body_design">
+<div class="select_your_plan_dizayn">
+    <div class="select_your_plan_navigation">
+     <label class="navigation_item">
+        <input type="radio" name="radio" value="another_ " checked/> 
+       <div class="nav_style">
+        <b> 1</b>
+    </div>
+        <div class="navigation_text">
+            <p>STEP 1</p>
+            <b> YOUR INFO</b>
+            </a>
+        </div>       
+    </label>
 
-        <div class="menu_item">
-        <b class="number-style">1</b>
-        <div class="menu_text">
-        <p>STEP 1</p>
-        <b>YOUR INFO</b>
-        </div>
-        </div>
-
-       <div class="menu_item">
-        <b class="number-style">2</b>
-        <div class="menu_text">
-            <p>STEP 2</p>
-            <b>SELECT PLAN</b>
-        </div>
-         </div>
-
-         <div class="menu_item">
-            <b class="number-style">3</b>
-            <div class="menu_text">
-                <p>STEP 3</p>
-                <b>ADD-ONS</b>
-            </div>
-             </div>
+    <label class="navigation_item">   
+        <input type="radio" name="radio" value="another_" /> 
+    <div class="nav_style">
+        <b >2</b>
+    </div> 
+     <div class="navigation_text">
+        <p>STEP 2</p>
+        <b> SELECT YOUR PLAN</b>
+     </div>
     
-             <div class="menu_item">
-                <b class="number-style">4</b>
-                <div class="menu_text">
-                    <p>STEP 4</p>
-                    <b>SUMMARY</b>
-                </div>
-                 </div>
+    </label>
+
+     <label class="navigation_item">
+        <input type="radio" name="radio" value="another_" /> 
+        <div class="nav_style">
+        <b>3</b>
+        </div>
+        <div class="navigation_text">
+            <p> STEP 3</p>
+            <p> ADD-ONS</p>
+        </div>
+    </label>
+
+     <label class="navigation_item">
+        <input type="radio" name="radio" value="another_" /> 
+        <div class="nav_style">
+        <b > 4</b>
+    </div>
+        <div class="navigation_text">
+            <p> STEP 4</p>
+            <b> SUMMARY</b>
+        </div> 
+        
+    </label>
+
     </div>
 
+<div class="plan_main">
+    <div class="select_your_plan_main">
 
-<div class="personal_info">
-    <b>Personal info</b>
-    <p>Please provide your name, email adress, and phone number.</p>
-    <form class="personal_info_form"> 
-   <div class="form_style"> <label for="name">Name</label>
-    <input type="text" id="name" placeholder="e.g.Stephen King">
-    <label for="email_adress">Email Adress</label>
-    <input type="email" id="email_adress" placeholder="e.g.stephenking@lorem.com">
-    <label for="phone_number">Phone Number</label>
-    <input type="tel" id="phone_number" placeholder="e.g.+1 234 567 890">
+        <h1 >Select your plan</h1>
+        <b>You have the option of monthly or yearly billing</b>
+
+       <div class="_navigation">   
+        <label class="main_navigation">
+            <input type="radio" name="radioname" value="one_value" checked="checked"/>
+            <div class="main_navigation_item" > <img style="max-width: 100px;" src="icon-arcade.svg">
+                <div class="navigation_item_text">
+                <b> Arcade</b>
+                <p>$9/mo</p>
+                 </div>
+            </div>
+        </label>
+        
+        <label class="main_navigation">
+            <input type="radio" name="radioname" value="another" />
+            <div class="main_navigation_item"><img style="max-width: 100px;" src="icon-advanced.svg">
+                <div class="navigation_item_text">
+                <b> Advanced</b>
+                <p>$12/mo</p></div>
+            </div>
+        </label>
+        
+        <label class="main_navigation">
+            <input type="radio" name="radioname" value="another" />
+            <div class="main_navigation_item"><img style="max-width: 100px;" src="icon-pro.svg">
+                <div class="navigation_item_text">
+                <b> Pro</b>
+                <p>$15/mo</p></div>
+            </div>
+        </label>
+    </div>
+
+       <!-- <div class="main_navigation">
+        
+        <div class="main_navigation_item">
+           
+            <img style="max-width: 100px;" src="icon-arcade.svg">
+            <div class="navigation_item_text">
+            <b> Arcade</b>
+            <p>$9/mo</p>
+             
+        </div>
+        </div>
+        
+        <div class="main_navigation_item">
+        <img style="max-width: 100px;" src="icon-advanced.svg">
+        <div class="navigation_item_text">
+        <b> Advanced</b>
+        <p>$12/mo</p>
+    </div>
+    </div>
+
+        <div class="main_navigation_item">
+        
+            <img style="max-width: 100px;" src="icon-pro.svg">
+            <div class="navigation_item_text">
+            <b> Pro</b>
+            <p>$15/mo</p>
+        
+        </div>
+        </div>
+    -->
+
+   <div class="normal-container">
+        <div class="smile-rating-container">
+          <div class="smile-rating-toggle-container">
+            <form class="submit-rating">
+              <input id="meh"  name="satisfaction" type="radio" /> 
+              <input id="fun" name="satisfaction" type="radio" /> 
+              <label for="meh" class="rating-label rating-label-meh">Monthly</label>
+              <div class="smile-rating-toggle"></div>
+              <div class="toggle-rating-pill"></div>
+              <label for="fun" class="rating-label rating-label-fun">Yearly</label>
+            </form>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      
+      
+<div class="select_your_plan_footer">
+    <a href="#">Go Back </a>
+    <div class="next_step"> <a href="#"> Next Step</a></div>
+    </div>
+</div>
+
 
 
 </div>
-    </form> 
-    
-</div>
-<div class="next_step">
-    <button class="button_style">Next Step</button>
-</div>
+
 
 </div>
 
-</div>
+
+
 </body>
 </html>
