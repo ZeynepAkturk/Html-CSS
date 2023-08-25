@@ -1,0 +1,321 @@
+html, body, div, span, applet, object, iframe, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  list-style: none;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+
+
+body
+{
+    box-sizing: border-box;
+    font-size:x-large;
+    background-color: aliceblue;
+}
+
+.body_design
+{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content:center;
+ 
+}
+
+.select_your_plan_dizayn
+{
+    display: flex;
+    flex-direction: row;
+    padding:1em;
+    background-color: white;
+}
+
+
+.select_your_plan_navigation
+{
+  display: flex;
+  flex-direction: column;
+  background-image: url("bg-sidebar-desktop.svg");
+  max-width:700px;
+  max-height:568px;
+  background-repeat: no-repeat;
+  display: relative;
+}
+
+
+
+.navigation_item 
+{   display: flex;
+    flex-direction: row;
+    margin:0.5em;
+    padding:0.5em;
+    align-items: center;
+}
+.nav_style
+{   border:2px solid white;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    position: relative; 
+}
+.nav_style b
+{ position: absolute;
+  left:0.8em;
+  top:0.5em;
+  color:white;
+}
+.navigation_text
+{   display: flex;
+    flex-direction: column;
+    padding:0.1em;
+    margin:0.5em;
+    color:white;
+    font-size: large;
+}
+
+.navigation_item > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.navigation_item > input+div{ /* DIV STYLES */
+  cursor:pointer;
+}
+.navigation_item> input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+  
+  border:1px solid white;
+  border-radius: 50%;
+  height:50px;
+  width: 50px;
+  text-align: center;
+  text-justify: center;
+  background-color:rgb(191, 191, 253);
+  
+}
+
+
+.plan_main
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin:0.2em;
+}
+
+.select_your_plan_main
+{
+ display: flex;
+ flex-direction: column;
+ align-items:left;
+ padding:10px;
+
+}
+
+.select_your_plan_main h1
+{
+    color:rgb(25, 25, 119);
+}
+
+.select_your_plan_main b
+{
+    color:gray;
+}
+
+._navigation{
+  display: flex;
+  flex-direction:row;
+  align-items:left;
+  padding:1em;
+  cursor: pointer;
+}
+.main_navigation
+{
+    display: flex;
+    flex-direction:row;
+    align-items:left;
+    padding:1em;
+   
+    
+}
+.main_navigation_item
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width:100%;
+  max-height:200px;
+  padding:0.5em;
+  margin:0.5em;
+}
+
+.navigation_item_text
+{
+  display: flex;
+  flex-direction: column;
+  margin:1em;
+  padding:0.2em;
+}
+
+.main_navigation > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.main_navigation > input + div{ /* DIV STYLES */
+  cursor:pointer;
+  border:1px solid gray;
+}
+.main_navigation> input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+  
+  background-color:rgb(239, 230, 247);
+  border:1px solid rgb(67, 3, 123);
+ 
+}
+
+
+
+
+
+
+.select_your_plan_footer
+{
+display: flex;
+flex: row;
+justify-content:space-between;
+background-color: white;
+height: 100%;
+margin-top: 3em;
+}
+
+.select_your_plan_footer a
+{
+    color:gray;
+    text-decoration: none;
+    margin:1em;
+    padding:0.5em;
+    
+}
+
+.next_step
+{
+    border:1px solid rgb(15, 15, 67);
+    background-color: rgb(15, 15, 67);
+    padding:0.5em;
+    margin:1em;
+}
+
+.next_step a
+{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+.normal-container {
+  
+  position: relative;
+  
+  margin-bottom: 1.2em;
+}
+
+.smile-rating-container {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  padding:0.3em;
+  margin:auto;
+  background-color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+}
+
+.submit-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-label {
+  position: relative;
+  font-size: 0.8em;
+  text-align: center;
+  flex: 0.34;
+  z-index: 3;
+  font-weight: bold;
+  cursor: pointer;
+  color:rgb(2, 2, 15);
+  transition: 500ms;
+}
+.rating-label:hover, .rating-label:active {
+  color: rgb(8, 8, 82);
+}
+
+.smile-rating-container input {
+  display: none;
+}
+
+.toggle-rating-pill {
+  position: relative;
+  height:50px;
+  width:156px;
+  background: rgb(17, 17, 93);
+  border-radius: 500px;
+  transition: all 500ms;
+}
+
+.smile-rating-toggle {
+  position: relative;
+  width:50px;
+  height: 50px;
+  background-color: white;
+  left: 60px;
+  border-radius:50%;
+  transition: all 500ms;
+  z-index: 4;
+}
+
+
+#fun:checked~.smile-rating-toggle {
+  left: 150px;
+}
+
+
+  @media only screen and (max-width:767px) {
+    .select_your_plan_dizayn{flex-direction: column;}
+    .select_your_plan_navigation{background-image: url("bg-sidebar-mobile.svg");
+     width:500px; height:200px;flex-direction:row; background-repeat:repeat; }
+    .navigation_text{display:none;}
+    ._navigation{flex-direction: column;margin: 10px; }
+    .main_navigation{flex-direction: column;margin: 10px; }
+    .main_navigation_item{flex-direction: row;}
+    .select_your_plan_dizayn{background-color:aliceblue;}
+    .select_your_plan_main{padding:10px;margin:10px; border-radius:10px;}
+    .select_your_plan_footer{width:100%; max-width:700px;}
+  }
+
+
+
+
+
+
+  
+
+
+
+
+
