@@ -50,7 +50,7 @@ body
 {
   display: flex;
   flex-direction: column;
-  background-image: url("bg-sidebar-desktop.svg");
+  background-image: url("multiStepForm_images_and_icons/bg-sidebar-desktop.svg");
   max-width:700px;
   max-height:568px;
   background-repeat: no-repeat;
@@ -297,7 +297,7 @@ margin-top: 3em;
 
   @media only screen and (max-width:767px) {
     .select_your_plan_dizayn{flex-direction: column;}
-    .select_your_plan_navigation{background-image: url("bg-sidebar-mobile.svg");
+    .select_your_plan_navigation{background-image: url("multiStepForm_images_and_icons/bg-sidebar-mobile.svg");
      width:500px; height:200px;flex-direction:row; background-repeat:repeat; }
     .navigation_text{display:none;}
     ._navigation{flex-direction: column;margin: 10px; }
